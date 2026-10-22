@@ -1,0 +1,7 @@
+# Architecture
+
+The application is a static multi-section HTML site with browser ES modules and no backend/build step. `puzzle.js` owns board validation, transitions, solvability, and random generation; `heuristics.js` evaluates states relative to a supplied goal; `astar.js` has no DOM dependencies and returns search results plus an ordered event log. UI modules render boards, control playback, and calculate/display metrics; `main.js` wires controls.
+
+Data flow: form strings → validated immutable 9-number states → relative parity check → A* with selected heuristic and execution limits → immutable search events and reconstructed path → capped event panels and independently navigable solution playback. Event records identify expanded state, generated successors, parent, depth, g/h/f, and frontier/explored snapshots as appropriate. Playback position is separate from search event history.
+
+Metrics derive from algorithm counters and `performance.now()` where available. Generated counts the start plus each legal successor considered (including duplicates); expanded counts non-goal states removed from the frontier for expansion. Memory is an estimate based on tracked state arrays and map entries, not browser-measured object memory. Errors are surfaced in an accessible status region; unsolvable boards are rejected before search. Static routing uses section anchors and relative CSS/module paths, compatible with a GitHub Pages project site.

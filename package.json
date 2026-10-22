@@ -1,0 +1,7 @@
+{
+  "name": "ai-8puzzle-visualizer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "node --test" }
+}
