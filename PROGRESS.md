@@ -4,7 +4,7 @@
 - Current status: Static application implemented; core tests pass; browser smoke test passed; not yet final-acceptance complete.
 - Current phase: 10 — testing and debugging.
 - Last verified application state: `npm test` passes 9/9; browser loaded at the tested viewport and solved the PDF example in 5 moves with 5 expansion events.
-- Deployment: Not deployed; no repository or Pages URL verified.
+- Deployment: GitHub Pages URL `https://nakul-ks.github.io/A-star-search/` verified reachable on 2026-10-23.
 
 ## Completed
 - [x] Inspected repository tree and Git status; confirmed only `.gitattributes`, Git metadata, and the assignment PDF were present.
@@ -14,6 +14,7 @@
 - [x] Add automated core tests; `npm test` passed 9 tests.
 - [x] Run a local browser smoke check; confirmed the PDF example solves with its paired custom goal.
 - [x] Rewrote the root README after inspecting application code, tests, docs, package scripts, Git remote, and license/assets state.
+- [x] Updated README with the verified GitHub Pages URL and removed its former screenshot section/placeholders.
 
 ## In progress
 - [ ] Deterministic playback tests, mobile/accessibility verification, and polish.
@@ -35,7 +36,7 @@
 - `npm test` — passed 9/9 tests (Node test runner).
 - Local browser smoke test: PDF example reports Solved, 5 moves, 5 events, no horizontal overflow at default viewport.
 - `node --check js/main.js`, `node --check js/astar.js`, and `git diff --check` — passed.
-- README verification: 8 fenced-code delimiters (balanced); all referenced local files exist; no screenshot, license, or verified Pages URL exists.
+- README verification: fenced-code delimiters balanced; all referenced local files exist; no license file exists. GitHub Pages URL was subsequently verified reachable.
 - `npm test` rerun during README verification — passed 9/9 tests.
 
 ## Latest session files

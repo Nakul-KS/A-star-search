@@ -4,7 +4,11 @@
 
 An interactive 8-puzzle assignment project that runs **A* Search** with Misplaced Tiles or Manhattan Distance, displays its search trace and metrics, and lets you step through the resulting solution.
 
-**Repository:** [Nakul-KS/A-star-search](https://github.com/Nakul-KS/A-star-search) · **GitHub Pages:** not deployed or verified
+<p align="center">
+  <a href="https://nakul-ks.github.io/A-star-search/"><strong>🚀 Live Demo</strong></a>
+</p>
+
+**Repository:** [Nakul-KS/A-star-search](https://github.com/Nakul-KS/A-star-search) · **Live application:** [nakul-ks.github.io/A-star-search](https://nakul-ks.github.io/A-star-search/)
 
 > **Assignment:** Artificial Intelligence · **Student:** Nakul K S · **Registration:** 24BCE2549 · **Assigned algorithm:** A* Search (Algorithm 7)
 
@@ -31,17 +35,6 @@ This project models each board as a state in a search space. It demonstrates mor
 - Responsive page layout, keyboard-focusable puzzle cells and controls, visible focus treatment, and reduced-motion styling.
 - A comparison table reports results for A* only. BFS, DFS, DLS, IDDLS, and GBFS are explicitly marked **Not implemented**; no sample measurements are presented as results.
 - Educational section describing A*'s cost function and heuristics.
-
-## Screenshots and demo
-
-Screenshots have not yet been captured. Add actual, repository-relative screenshots here after verifying them:
-
-| View | Screenshot |
-| --- | --- |
-| Main application and puzzle setup | _Screenshot to be added_ |
-| Search trace and frontier/explored lists | _Screenshot to be added_ |
-| Solution playback and metrics | _Screenshot to be added_ |
-| A* comparison row | _Screenshot to be added_ |
 
 ## How A* search works
 
@@ -186,15 +179,11 @@ The current suite is `tests/search.test.js`, run with `npm test`. It covers inpu
 
 ## Deployment
 
-The site is static and has no build step or backend. GitHub Pages deployment has **not** been performed or verified.
+The static site is deployed through GitHub Pages and the live page was verified at:
 
-1. Push the repository to GitHub.
-2. Open **Settings → Pages** in the repository.
-3. Under **Build and deployment**, select **Deploy from a branch**, choose `main` and the repository root (`/`), then save.
-4. Wait for the Pages deployment to complete. Open the URL shown by GitHub and verify the page, styles, and module requests before adding a live link here.
+[🚀 https://nakul-ks.github.io/A-star-search/](https://nakul-ks.github.io/A-star-search/)
 
-- Repository: [Nakul-KS/A-star-search](https://github.com/Nakul-KS/A-star-search) (configured remote; reachable at inspection).
-- Live site: _Not yet deployed or verified._
+The project has no build step or backend. To configure or update deployment, publish the repository root from the `main` branch under **Settings → Pages → Build and deployment → Deploy from a branch**. After changing Pages settings or publishing updates, check the deployment status in GitHub and verify the resulting page and module requests.
 
 ## Student and assignment
 
