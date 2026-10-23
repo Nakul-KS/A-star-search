@@ -15,6 +15,7 @@
 - [x] Run a local browser smoke check; confirmed the PDF example solves with its paired custom goal.
 - [x] Rewrote the root README after inspecting application code, tests, docs, package scripts, Git remote, and license/assets state.
 - [x] Updated README with the verified GitHub Pages URL and removed its former screenshot section/placeholders.
+- [x] Added the provided application screenshots under `images/` and linked them with captions in the README's Screenshots & Demo section.
 
 ## In progress
 - [ ] Deterministic playback tests, mobile/accessibility verification, and polish.
@@ -37,10 +38,11 @@
 - Local browser smoke test: PDF example reports Solved, 5 moves, 5 events, no horizontal overflow at default viewport.
 - `node --check js/main.js`, `node --check js/astar.js`, and `git diff --check` — passed.
 - README verification: fenced-code delimiters balanced; all referenced local files exist; no license file exists. GitHub Pages URL was subsequently verified reachable.
+- Screenshot verification: three provided PNGs moved into `images/` and referenced in README; source images visually inspected to ensure captions match their content.
 - `npm test` rerun during README verification — passed 9/9 tests.
 
 ## Latest session files
-- Updated root `README.md` with verified usage, structure, constraints, test instructions, configured repository link, and deployment/license/screenshot status.
+- Added `images/home-and-puzzle-setup.png`, `images/puzzle-setup-and-metrics.png`, and `images/algorithm-learning-section.png`; updated root `README.md` gallery and tree.
 
 ## Remaining work
 1. Add automated playback and comparison integration coverage; improve direct board editing.

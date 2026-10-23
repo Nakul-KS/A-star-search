@@ -36,6 +36,19 @@ This project models each board as a state in a search space. It demonstrates mor
 - A comparison table reports results for A* only. BFS, DFS, DLS, IDDLS, and GBFS are explicitly marked **Not implemented**; no sample measurements are presented as results.
 - Educational section describing A*'s cost function and heuristics.
 
+## Screenshots & Demo
+
+[🚀 Try the Live Demo](https://nakul-ks.github.io/A-star-search/)
+
+![Application landing section and puzzle workbench](images/home-and-puzzle-setup.png)
+*Application overview and puzzle workbench — the landing section and the beginning of the initial/goal puzzle setup.*
+
+![Puzzle configuration, solution panel, and initial metrics](images/puzzle-setup-and-metrics.png)
+*Puzzle configuration and metrics — the selected initial and goal boards, heuristic controls, solution playback panel, and metrics before a search is run.*
+
+![Algorithm comparison and A* learning section](images/algorithm-learning-section.png)
+*Comparison and A* learning content — the comparison table (with unimplemented algorithms identified) and the educational A* heuristic section.*
+
 ## How A* search works
 
 A* prioritizes a state `n` by its estimated total solution cost:
@@ -82,6 +95,10 @@ Further details and pseudocode: [A* algorithm notes](docs/ALGORITHM.md).
 ├── index.html
 ├── css/
 │   └── styles.css
+├── images/
+│   ├── algorithm-learning-section.png
+│   ├── home-and-puzzle-setup.png
+│   └── puzzle-setup-and-metrics.png
 ├── js/
 │   ├── astar.js
 │   ├── comparison.js
