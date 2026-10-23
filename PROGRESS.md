@@ -13,6 +13,7 @@
 - [x] Create the static UI, A* search, arbitrary-goal puzzle rules, heuristic controls, playback, trace, metrics, and honest comparison rows.
 - [x] Add automated core tests; `npm test` passed 9 tests.
 - [x] Run a local browser smoke check; confirmed the PDF example solves with its paired custom goal.
+- [x] Rewrote the root README after inspecting application code, tests, docs, package scripts, Git remote, and license/assets state.
 
 ## In progress
 - [ ] Deterministic playback tests, mobile/accessibility verification, and polish.
@@ -34,9 +35,11 @@
 - `npm test` — passed 9/9 tests (Node test runner).
 - Local browser smoke test: PDF example reports Solved, 5 moves, 5 events, no horizontal overflow at default viewport.
 - `node --check js/main.js`, `node --check js/astar.js`, and `git diff --check` — passed.
+- README verification: 8 fenced-code delimiters (balanced); all referenced local files exist; no screenshot, license, or verified Pages URL exists.
+- `npm test` rerun during README verification — passed 9/9 tests.
 
 ## Latest session files
-- Created app and core modules, tests, and project documentation; changed the UI's sample goal to the assignment PDF goal after finding the conventional-goal mismatch.
+- Updated root `README.md` with verified usage, structure, constraints, test instructions, configured repository link, and deployment/license/screenshot status.
 
 ## Remaining work
 1. Add automated playback and comparison integration coverage; improve direct board editing.
